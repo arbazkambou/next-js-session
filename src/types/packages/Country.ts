@@ -8,5 +8,5 @@ export interface Country {
   image_url: string;
   slug: string;
   starts_at?: string;
-  href: string;
+  href?: string;
 }

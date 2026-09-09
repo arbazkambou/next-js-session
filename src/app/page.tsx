@@ -1,6 +1,6 @@
 import { Hero } from "@/components/home/hero";
 
-export default function HomePage() {
+export default async function Page() {
   return (
     <>
       <Hero />

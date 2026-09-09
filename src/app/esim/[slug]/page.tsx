@@ -1,12 +1,8 @@
-import { PackagesList } from "@/components/packages/packages-list";
-
 interface CountryPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export default async function CountryPage({ params }: CountryPageProps) {
-  const { slug } = await params;
-
+export default async function CountryPage() {
   return (
     <section className="container mx-auto mt-16">
       <div className="mb-10 max-w-3xl">
@@ -20,7 +16,9 @@ export default async function CountryPage({ params }: CountryPageProps) {
         </p>
       </div>
 
-      <PackagesList slug={slug} />
+      {/* <Suspense fallback={<PackagesSkeleton />}>
+        <PackagesList slug={slug} />
+      </Suspense> */}
 
       <aside className="mt-8 rounded-xl border border-dashed bg-muted/50 p-5 text-sm text-muted-foreground">
         <strong className="text-foreground">Session tip:</strong> throttle or
