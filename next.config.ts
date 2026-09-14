@@ -9,7 +9,7 @@ const nextConfig: NextConfig = {
     browserToTerminal: false,
   },
   cacheLife: {
-    seconds: {
+    sec: {
       stale: 30,
       revalidate: 30,
       expire: 3600,
